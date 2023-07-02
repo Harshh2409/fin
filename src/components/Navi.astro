@@ -1,89 +1,39 @@
----
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Navi from '../components/Navi.astro';
-import image from '../components/img1.svg';
-import Footer from '../components/Footer.astro'
----
+<nav class="navbar">
+    <div class="logo">FinEdge</div>
 
-<Layout title="Welcome to Astro.">
-	<main>
-		
-		<Navi/>
+    <ul class="nav-links">
 
-		  <div class="main-container">
-		  <img src={image} class="image"/>
-		  <p class="desc">
-			FinEdge revolutionizes financial services by providing seamless, user-friendly solutions for secure transactions, smart investments, and personalized financial guidance.
-		  </p>
-		</div>
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <div class="menu">
+
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+
+        <li class="services">
+          <a href="/services">Services</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="crypto">Crypto services </a></li>
+            <li><a href="/">Personal finance management</a></li>
+            <li><a href="/">Digital Payments</a></li>
+            <li><a href="/">Online Lending</a></li>
+            <li><a href="/">Open Banking</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="/price">Pricing</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
 
 
-		<Footer/>
-			
-	</main>
-</Layout>
-
-<style>
-	main {
-		margin: 0%;padding: 0%;
-	}
-	.footer{
-		background-color: teal;
-		padding: 20px;
-	}
-	.main-container{
-		display: flex;
-		align-items: center;
-		margin: 3%;
-		justify-content: space-around;
-	}
-	.image{
-		width: 50%;
-		height: auto;
-	}
-	.desc{
-   margin: 4%;
-	}
-	@media screen and (min-width: 601px) {
-  div.main-container{
-    font-size: 25px;
-  }
-  .image{
-		width: 50%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 600px) {
-  div.main-container {
-    font-size: 18px;
-  }
-  .image{
-		width: 30%;
-		height: auto;
-	}
-	.main-container{
-		display: flex;
-		flex-direction: column;
-	}
-}
-	* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: cursive;
-  margin: 0;padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
+  <style>
+    li {
   list-style: none;
 }
 .navbar {
@@ -95,7 +45,10 @@ li {
   color: #fff;
   margin: 0;
 }
-
+body {
+  font-family: cursive;
+  margin: 0;padding: 0;
+}
 .nav-links a {
   color: #fff;
 }
@@ -215,14 +168,19 @@ input[type=checkbox] {
     font-weight: bold;
 
 	  }
-	  .nav-mobile{
-
-	  }
-	h1 {
+      h1 {
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
 	}
+    body {
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -230,29 +188,7 @@ input[type=checkbox] {
 		background-size: 400%;
 		background-position: 0%;
 	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+	  .nav-mobile{
+
+	  }
+  </style>

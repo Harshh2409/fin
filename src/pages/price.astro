@@ -1,0 +1,42 @@
+---
+import Navi from '../components/Navi.astro';
+import img4 from '../components/img4.svg';
+import img5 from '../components/img5.svg';
+import img6 from '../components/img6.svg';
+import Footer from '../components/Footer.astro'
+---
+<main>
+<Navi/>
+<div class="cont">
+Digital Payment Solutions - Simplify your payment processes with our secure and user-friendly digital payment solutions. Price: $49/month.
+With our user-friendly platform, users can easily send and receive money, pay bills, and make online purchases with just a few clicks.
+<img src={img4} class="image"/>
+</div>
+
+<div class="cont">
+    <img src={img5} class="image"/>
+    Personal Finance Management - Take control of your finances with our intuitive personal finance management tools. Price: $9.99/month.
+    Our goal is to simplify personal finance management, improve financial literacy, and empower individuals to make informed decisions for a secure and prosperous future. 
+</div>
+
+<div class="cont">
+    
+    Credit Score Monitoring - Monitor and improve your credit score with our credit score monitoring and analysis tools. Price: $9.99/month. 
+    Your credit card score is a numerical representation of your creditworthiness, reflecting your financial responsibility and trustworthiness to lenders.
+    <img src={img6} class="image"/>
+</div>
+<Footer/>
+</main>
+
+<style>
+.cont{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    align-content: center;
+}
+.image{
+    width:10rem;
+    height: auto;
+}
+</style>

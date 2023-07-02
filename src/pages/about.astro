@@ -1,0 +1,58 @@
+---
+import Footer from "../components/Footer.astro" ;
+import Navi from "../components/Navi.astro" ;
+import  img2 from "../components/bank.png";
+import  img3 from "../components/img3.svg";
+---
+<main>
+
+<Navi/>
+
+<div class="cont">
+    <img src={img2} class="img"/>
+   <p class="desc"> Welcome to our FinEdge! We are a dynamic team of financial and technological experts committed to transforming the way people manage their finances. Our mission is to provide innovative solutions that empower individuals and businesses to achieve their financial goals with confidence.
+    
+    At our core, we believe in leveraging cutting-edge technology to democratize financial services and make them accessible to everyone. Through our user-friendly platform, we offer a range of services including lending, personal finance management, and digital payment solutions. Our goal is to simplify complex financial processes, remove barriers, and create a seamless and inclusive experience for our users
+</p>
+</div>
+
+<div class="cont">
+    
+   <p class="desc"> Security is of paramount importance to us. We have implemented stringent measures to safeguard our users' data and ensure the utmost privacy and protection. You can trust us to handle your financial information with the highest level of integrity and security.
+
+    We are driven by our passion for innovation and our commitment to empowering individuals to take control of their financial futures. Join us on this exciting journey as we revolutionize the world of finance and unlock new opportunities for financial growth and prosperity. Together, let's shape a brighter and more inclusive financial landscape.
+</p>
+<img src={img3} class="img"/>
+</div>
+
+
+<Footer/>
+</main>
+
+<style>
+    .cont{display: flex;flex-direction: row;
+        justify-content: space-around;flex: 1;align-self: center;
+        margin: 3%;
+    }
+    .img{
+		width: 20rem;
+		height: auto;
+	}
+    @media screen and (max-width: 601px) {
+    .cont{
+        display: flex;flex-direction: column;
+    }
+    .desc{
+        margin:4%;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+

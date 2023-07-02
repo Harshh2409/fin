@@ -1,0 +1,79 @@
+---
+
+import Footer from "../components/Footer.astro" ;
+import Navi from "../components/Navi.astro" ;
+import  img7 from "../components/img7.svg";
+---
+<main>
+<Navi/>
+<div class="cont">
+<img src={img7} class="image"/>
+<p class="desc">
+Welcome to FinEdge, where financial empowerment meets technological innovation. We're here to revolutionize the way you manage your finances, making it easier, more accessible, and secure than ever before.
+
+With our intuitive platform, you can unlock a world of possibilities. Whether you're an individual seeking loans, a business looking to streamline payments, or simply aiming to gain better control over your personal finances, we've got you covered
+<br>
+<button class="btn">Connect</button>
+</p>
+</div>
+
+
+<Footer/>
+</main>
+
+<style>
+   .cont{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    align-content: center;justify-content: space-around;
+}
+.desc{
+    margin:5% ;
+}
+@media screen and (max-width: 600px) {
+    body{
+        margin: 0;padding: 0;
+    }
+    .cont{
+    display: flex;
+    flex-direction: column;
+    margin: 7%;
+    align-content: center;justify-content: space-around;
+    }
+    .btn{
+        background-color: teal;
+
+  font-size: 3px;
+  
+    }
+    .desc{
+        font-size: ;
+    }
+}
+.btn{
+    background-color: teal;
+  border: none;
+  color: white;
+  padding: 15px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 10%;
+  border-radius: 0.3rem;
+  
+
+}
+.btn:hover{
+    background-color: white;
+    color: teal;
+    border: teal solid;
+}
+.image{
+    width:20rem;
+    height: auto;
+}
+</style>

@@ -1,0 +1,88 @@
+---
+import Footer from "../components/Footer.astro" ;
+import Navi from "../components/Navi.astro" ;
+---
+<main>
+
+<Navi/>
+<div class="cont"> 
+<div class="cont-2">
+    <h2>Crypto services</h2>
+    Fintech startups offer a wide range of crypto services, including cryptocurrency wallets, exchanges, payment solutions, lending and borrowing, asset management, tokenization platforms, ICO and token sale assistance, as well as regulatory compliance and security services. These services cater to the growing demand for digital currencies and provide users with convenient, secure, and innovative solutions in the crypto space.
+    <button class="btn">See more</button>
+</div>
+
+
+<div class="cont-2">
+<h2>Loans</h2>
+FinEdge is revolutionizing lending services, providing individuals and businesses with seamless access to the capital they need. With our user-friendly platform, borrowers can easily apply for loans and receive quick decisions, ensuring a streamlined and efficient process. We offer flexible repayment options tailored to each borrower's unique circumstances, making it easier to manage finances and achieve financial goals. 
+<button class="btn">See more</button>
+</div>
+</div>
+
+<div class="cont"> 
+    <div class="cont-2">
+        <h2>Digital Payments</h2>
+        FinEdge provides a seamless digital payment service, enabling individuals and businesses to make secure and convenient transactions. With our user-friendly platform, users can easily send and receive money, pay bills, and make online purchases with just a few clicks. We prioritize security and reliability, ensuring a smooth and hassle-free digital payment experience.
+
+
+
+
+
+        <button class="btn">See more</button>
+    </div>
+    
+    <div class="cont-2">
+    <h2>Personal finance</h2>
+    Our fintech startup goes beyond just lending services and offers an array of personal finance features to empower individuals in managing their money effectively. With our intuitive platform, users can track their expenses, set budgeting goals, and receive personalized financial insights. We provide real-time updates on account balances, transaction history, and offer intelligent suggestions for optimizing spending and saving habits. Our goal is to simplify personal finance management, improve financial literacy, and empower individuals to make informed decisions for a secure and prosperous future.
+    <button class="btn">See more</button>
+    </div>
+    </div>
+
+<Footer/>
+</main>
+
+<style>
+.cont{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex: 1;
+    align-items: stretch;
+    justify-content: space-between;
+    justify-items:center;
+    margin-bottom: 5%;margin-left: 3%;margin-right: 3%;
+}
+.cont-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin: ;
+}
+@media screen and (max-width: 601px) {
+.cont{
+    display: flex;flex-direction: column;
+}
+.cont2{
+    margin: 6% 5%;
+}
+}
+.btn{
+    background-color: teal;
+  border: none;
+  color: white;
+  padding: 15px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 0.3rem;
+  ma
+
+}
+
+</style>
