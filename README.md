@@ -15,4 +15,6 @@ Welcome to the Fintech Project! This project aims to develop an innovative finte
 
 -Advanced Security Measures: Your data is our priority. We have implemented robust security protocols to ensure the privacy and protection of your sensitive financial information.
 
+Live link: https://fin-edge.netlify.app/home/
+
 
